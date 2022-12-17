@@ -24,7 +24,7 @@ CMD ["/usr/lib/systemd/systemd", "--system"]
 RUN zypper in -y sudo python3 python3-pip
 
 # Upgrade Pip so cryptography package works.
-RUN python3 -m pip install --upgrade pip==20.3.4
+RUN python3 -m pip install --upgrade pip==21.3.1
 
 # Install Ansible via Pip.
 RUN pip3 install $pip_packages
